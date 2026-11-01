@@ -161,7 +161,7 @@ position = Vector2(114, 165)
 scale = Vector2(2.1458335, 2.0691965)
 sprite_frames = SubResource("SpriteFrames_3oj77")
 animation = &"post-dash"
-frame_progress = 0.10592219
+frame_progress = 0.84209645
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1618466538]
 position = Vector2(45, 26)
