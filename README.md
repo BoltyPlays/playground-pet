@@ -10,5 +10,6 @@ A silly Yoshi that chases your mouse.
  - Chases your mouse. That's it...
 
 ## Installation
-Just install the needed file from the Release pages! Should work on Windows and Linux.
+Just install the needed file from the Release pages! Should work on Windows and Linux (AMD_64).
 Both OSes have been tested but each situation changes :/
+For my penguin users, **please grant the file permission to run!**
