@@ -3,6 +3,10 @@
 [ext_resource type="Script" uid="uid://d0pl26dybgac6" path="res://yoshi.gd" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://71pm42jrvegi" path="res://funyoshi.png" id="2_0e48y"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_0e48y"]
+atlas = ExtResource("2_0e48y")
+region = Rect2(157, 2, 24, 32)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_epypp"]
 atlas = ExtResource("2_0e48y")
 region = Rect2(1, 2, 24, 32)
@@ -14,6 +18,14 @@ region = Rect2(1, 138, 24, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_q6r6c"]
 atlas = ExtResource("2_0e48y")
 region = Rect2(53, 138, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ir8iy"]
+atlas = ExtResource("2_0e48y")
+region = Rect2(105, 2, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hqns4"]
+atlas = ExtResource("2_0e48y")
+region = Rect2(131, 2, 24, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kdubu"]
 atlas = ExtResource("2_0e48y")
@@ -33,6 +45,14 @@ region = Rect2(79, 2, 24, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3oj77"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0e48y")
+}],
+"loop": 1,
+"name": &"dash",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_epypp")
@@ -64,6 +84,56 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_ir8iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ir8iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ir8iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ir8iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ir8iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ir8iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ir8iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ir8iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqns4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqns4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqns4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqns4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqns4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqns4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqns4")
+}],
+"loop": 1,
+"name": &"post-dash",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_kdubu")
 }, {
 "duration": 1.0,
@@ -90,8 +160,8 @@ script = ExtResource("1_0e48y")
 position = Vector2(114, 165)
 scale = Vector2(2.1458335, 2.0691965)
 sprite_frames = SubResource("SpriteFrames_3oj77")
-animation = &"walk"
-frame_progress = 0.8972756
+animation = &"post-dash"
+frame_progress = 0.10592219
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1618466538]
 position = Vector2(45, 26)
